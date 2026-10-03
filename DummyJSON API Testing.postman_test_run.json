@@ -1,0 +1,2436 @@
+{
+	"id": "9e94fa6c-2cf5-4263-a477-130be0abeb84",
+	"name": "DummyJSON API Testing",
+	"timestamp": "2026-10-02T20:48:05.577Z",
+	"collection_id": "57235749-fb592506-fb0c-4d9c-bebc-88b13595d10a",
+	"folder_id": 0,
+	"environment_id": "57235749-f9546e27-68d2-46aa-b257-c325f1e42f05",
+	"totalPass": 144,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2026-10-02T20:47:54.608Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "b2dc37bb-fc96-4b68-8e1f-93092b840918",
+			"name": "all Products",
+			"url": "https://dummyjson.com/products",
+			"time": 262,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response is JSON": true,
+				"Products array is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Products array is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				262
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response is JSON": true,
+					"Products array is returned": true
+				}
+			]
+		},
+		{
+			"id": "72f5d5b2-86fa-4aa9-bf57-6b70bd9a547a",
+			"name": "Product required fields",
+			"url": "https://dummyjson.com/products",
+			"time": 88,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Required product fields are returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Required product fields are returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				88
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Required product fields are returned": true
+				}
+			]
+		},
+		{
+			"id": "a2f65285-3fd9-499b-a224-0f1ed46b2f09",
+			"name": "product with valid ID",
+			"url": "https://dummyjson.com/products/1",
+			"time": 84,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Product ID is 1": true,
+				"Product details are returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Product ID is 1": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Product details are returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				84
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Product ID is 1": true,
+					"Product details are returned": true
+				}
+			]
+		},
+		{
+			"id": "e54a8dee-51be-48d3-85df-f234024ed8bd",
+			"name": "Product with invalid ID",
+			"url": "https://dummyjson.com/products/9999",
+			"time": 115,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Product is not found": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Product is not found": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				115
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Product is not found": true
+				}
+			]
+		},
+		{
+			"id": "77d45adb-8621-4ead-8979-001b66779461",
+			"name": "Products with keyword",
+			"url": "https://dummyjson.com/products/search?q=phone",
+			"time": 107,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Products array is returned": true,
+				"Search results are related to the keyword": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Products array is returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Search results are related to the keyword": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				107
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Products array is returned": true,
+					"Search results are related to the keyword": true
+				}
+			]
+		},
+		{
+			"id": "f490af7a-c475-4a2f-bcf2-1ad8b52e129c",
+			"name": "Products with invalid keyword",
+			"url": "https://dummyjson.com/products/search?q=abcde123",
+			"time": 140,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"No products are returned for unmatched keyword": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"No products are returned for unmatched keyword": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				140
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"No products are returned for unmatched keyword": true
+				}
+			]
+		},
+		{
+			"id": "c79377d1-7589-410c-858e-ae0849be1983",
+			"name": "Products with a valid category",
+			"url": "https://dummyjson.com/products/category/smartphones",
+			"time": 118,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Products are returned for the category": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Products are returned for the category": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				118
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Products are returned for the category": true
+				}
+			]
+		},
+		{
+			"id": "bbe6dacf-555d-42ed-91d7-2153f5550b64",
+			"name": "Products with invalid category",
+			"url": "https://dummyjson.com/products/category/invalid%20category",
+			"time": 141,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Products are returned for the category": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Products are returned for the category": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				141
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Products are returned for the category": true
+				}
+			]
+		},
+		{
+			"id": "e6a4d724-6325-47d5-a819-dc7f03ab2121",
+			"name": "All available products",
+			"url": "https://dummyjson.com/products/categories",
+			"time": 119,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Categories are returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Categories are returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				119
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Categories are returned": true
+				}
+			]
+		},
+		{
+			"id": "01c04f1d-654d-44fa-837f-252a7fdf8671",
+			"name": "products with a valid limit value.",
+			"url": "https://dummyjson.com/products?limit=5",
+			"time": 104,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Returned products do not exceed the limit": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Returned products do not exceed the limit": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				104
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Returned products do not exceed the limit": true
+				}
+			]
+		},
+		{
+			"id": "c2e00c20-5757-4b59-8723-d224adaf9426",
+			"name": "products using pagination with skip.",
+			"url": "https://dummyjson.com/products?limit=5&skip=5",
+			"time": 107,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Pagination returns products within the limit": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pagination returns products within the limit": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				107
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Pagination returns products within the limit": true
+				}
+			]
+		},
+		{
+			"id": "77d953aa-416a-4d19-8099-69d45ad8a5a7",
+			"name": "products with selected fields only.",
+			"url": "https://dummyjson.com/products?select=title,price",
+			"time": 104,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Selected fields are returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Selected fields are returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				104
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Selected fields are returned": true
+				}
+			]
+		},
+		{
+			"id": "6d19674d-5edc-4e20-816b-472d1cee3190",
+			"name": "products in ascending order.",
+			"url": "https://dummyjson.com/products?sortBy=price&order=asc",
+			"time": 113,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Products are sorted by price ascending": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Products are sorted by price ascending": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				113
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Products are sorted by price ascending": true
+				}
+			]
+		},
+		{
+			"id": "cd98629f-8165-4c11-9d32-b662ccca33e1",
+			"name": "products in descending order.",
+			"url": "https://dummyjson.com/products?sortBy=price&order=desc",
+			"time": 112,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Products are sorted by price descending": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Products are sorted by price descending": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				112
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Products are sorted by price descending": true
+				}
+			]
+		},
+		{
+			"id": "4da005bd-7a19-4a1e-a254-a62b8d8c3734",
+			"name": "product with valid data.",
+			"url": "https://dummyjson.com/products/add",
+			"time": 98,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Product is created successfully": true,
+				"Generated product ID is returned": true,
+				"Response has valid content type": true
+			},
+			"testPassFailCounts": {
+				"Product is created successfully": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Generated product ID is returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has valid content type": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				98
+			],
+			"allTests": [
+				{
+					"Product is created successfully": true,
+					"Generated product ID is returned": true,
+					"Response has valid content type": true
+				}
+			]
+		},
+		{
+			"id": "5b876a74-dc9d-4317-b39b-6f2dcfa0e77d",
+			"name": "product without a title.",
+			"url": "https://dummyjson.com/products/add",
+			"time": 122,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Request is handled successfully": true
+			},
+			"testPassFailCounts": {
+				"Request is handled successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				122
+			],
+			"allTests": [
+				{
+					"Request is handled successfully": true
+				}
+			]
+		},
+		{
+			"id": "716f92c7-bb79-4349-b17f-bbaad80c458e",
+			"name": "product without a price.",
+			"url": "https://dummyjson.com/products/add",
+			"time": 134,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Request is handled successfully": true
+			},
+			"testPassFailCounts": {
+				"Request is handled successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				134
+			],
+			"allTests": [
+				{
+					"Request is handled successfully": true
+				}
+			]
+		},
+		{
+			"id": "ca9cb9d9-cfb6-4e67-a875-df14712a40bc",
+			"name": "Updating product information",
+			"url": "https://dummyjson.com/products/1",
+			"time": 182,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Product is updated successfully": true,
+				"Product ID remains unchanged": true,
+				"Updated product information is returned": true
+			},
+			"testPassFailCounts": {
+				"Product is updated successfully": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Product ID remains unchanged": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Updated product information is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				182
+			],
+			"allTests": [
+				{
+					"Product is updated successfully": true,
+					"Product ID remains unchanged": true,
+					"Updated product information is returned": true
+				}
+			]
+		},
+		{
+			"id": "fbce0a28-552a-4231-9e40-6ffc76229c28",
+			"name": "Updating product information",
+			"url": "https://dummyjson.com/products/1",
+			"time": 101,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Product is updated successfully": true,
+				"Product ID remains unchanged": true,
+				"Price is updated": true
+			},
+			"testPassFailCounts": {
+				"Product is updated successfully": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Product ID remains unchanged": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Price is updated": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				101
+			],
+			"allTests": [
+				{
+					"Product is updated successfully": true,
+					"Product ID remains unchanged": true,
+					"Price is updated": true
+				}
+			]
+		},
+		{
+			"id": "b71f2aa7-17ca-440b-8984-6dd7eaeb8e79",
+			"name": "Updating a product using an invalid product ID.",
+			"url": "https://dummyjson.com/products/9999",
+			"time": 94,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Product is not found": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Product is not found": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				94
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Product is not found": true
+				}
+			]
+		},
+		{
+			"id": "17f88b25-ae1b-41ad-af52-9b27083e5463",
+			"name": "product using a valid product ID.",
+			"url": "https://dummyjson.com/products/1",
+			"time": 94,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Deleted product ID is returned": true,
+				"Product is marked as deleted": true,
+				"Deletion timestamp is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Deleted product ID is returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Product is marked as deleted": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Deletion timestamp is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				94
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Deleted product ID is returned": true,
+					"Product is marked as deleted": true,
+					"Deletion timestamp is returned": true
+				}
+			]
+		},
+		{
+			"id": "3b836cd0-48ec-4170-842c-62290fc6a638",
+			"name": "Product using an invalid product ID.",
+			"url": "https://dummyjson.com/products/9999",
+			"time": 103,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Product is not found": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Product is not found": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				103
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Product is not found": true
+				}
+			]
+		},
+		{
+			"id": "60a081f9-de11-46c0-8b56-915b2743cbb7",
+			"name": "User can login using valid credentials.",
+			"url": "https://dummyjson.com/auth/login",
+			"time": 105,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Access token is returned": true,
+				"Refresh token is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Access token is returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Refresh token is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				105
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Access token is returned": true,
+					"Refresh token is returned": true
+				}
+			]
+		},
+		{
+			"id": "4b1ae3b5-aa62-4f63-9e6a-0a9826aedadd",
+			"name": "Valid username and invalid password.",
+			"url": "https://dummyjson.com/auth/login",
+			"time": 94,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Error message is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				94
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Error message is returned": true
+				}
+			]
+		},
+		{
+			"id": "7e5b4687-5c51-4248-aa95-945418a4d127",
+			"name": "Invalid credentials.",
+			"url": "https://dummyjson.com/auth/login",
+			"time": 97,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 401": true,
+				"Error message is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				97
+			],
+			"allTests": [
+				{
+					"Status code is 401": true,
+					"Error message is returned": true
+				}
+			]
+		},
+		{
+			"id": "aae1154e-1bc6-4895-95cd-3cdaab9b70fa",
+			"name": "Invalid username and valid password.",
+			"url": "https://dummyjson.com/auth/login",
+			"time": 105,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Error message is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Error message is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				105
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Error message is returned": true
+				}
+			]
+		},
+		{
+			"id": "a512c2f7-da1c-4fc3-9070-6e258e015494",
+			"name": "Missing username and valid password.",
+			"url": "https://dummyjson.com/auth/login",
+			"time": 110,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Required credentials error message is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Required credentials error message is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				110
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Required credentials error message is returned": true
+				}
+			]
+		},
+		{
+			"id": "cc006a17-22b1-42fd-a21d-fbd8ea1e5f46",
+			"name": "Valid username and missing password.",
+			"url": "https://dummyjson.com/auth/login",
+			"time": 102,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Required credentials error message is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Required credentials error message is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				102
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Required credentials error message is returned": true
+				}
+			]
+		},
+		{
+			"id": "0effd521-8542-40c3-a72c-5641fcd84fab",
+			"name": "Authenticated user using an invalid access token.",
+			"url": "https://dummyjson.com/auth/me",
+			"time": 96,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code is 401": true,
+				"Unauthorized error message is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Unauthorized error message is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				96
+			],
+			"allTests": [
+				{
+					"Status code is 401": true,
+					"Unauthorized error message is returned": true
+				}
+			]
+		},
+		{
+			"id": "b910c2e4-97bf-4a25-9b05-0ab0af9956ca",
+			"name": "Authenticated user using a valid access token.",
+			"url": "https://dummyjson.com/auth/me",
+			"time": 101,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Authenticated user information is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Authenticated user information is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				101
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Authenticated user information is returned": true
+				}
+			]
+		},
+		{
+			"id": "c8ae6bac-532e-4c23-b1c0-32772bac6019",
+			"name": "Authenticated user without an access token.",
+			"url": "https://dummyjson.com/auth/me",
+			"time": 98,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code is 401": true,
+				"Access token is required": true
+			},
+			"testPassFailCounts": {
+				"Status code is 401": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Access token is required": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				98
+			],
+			"allTests": [
+				{
+					"Status code is 401": true,
+					"Access token is required": true
+				}
+			]
+		},
+		{
+			"id": "70152366-5117-4bab-9026-8bba4f75d634",
+			"name": "Refreshing the access token using a valid refresh token.",
+			"url": "https://dummyjson.com/auth/refresh",
+			"time": 101,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"New access token is returned": true,
+				"New refresh token is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"New access token is returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"New refresh token is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				101
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"New access token is returned": true,
+					"New refresh token is returned": true
+				}
+			]
+		},
+		{
+			"id": "7dd916bc-5ce1-46b5-9e94-879826c22153",
+			"name": "Refreshing the access token using an invalid refresh token.",
+			"url": "https://dummyjson.com/auth/refresh",
+			"time": 109,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Status code is 403": true,
+				"Forbidden error message is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Forbidden error message is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				109
+			],
+			"allTests": [
+				{
+					"Status code is 403": true,
+					"Forbidden error message is returned": true
+				}
+			]
+		},
+		{
+			"id": "e625d49e-349e-44f8-bbbf-7524d7c23b27",
+			"name": "All users are retrieved successfully.",
+			"url": "https://dummyjson.com/users",
+			"time": 85,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Users are returned successfully": true,
+				"Users list is not empty": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Users are returned successfully": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Users list is not empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				85
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Users are returned successfully": true,
+					"Users list is not empty": true
+				}
+			]
+		},
+		{
+			"id": "207bc988-0d87-4ccc-90e5-33d8ea38682b",
+			"name": "Contains the required user fields.",
+			"url": "https://dummyjson.com/users",
+			"time": 84,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Required user fields are returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Required user fields are returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				84
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Required user fields are returned": true
+				}
+			]
+		},
+		{
+			"id": "c5fa3456-4478-43bf-931c-4fc98529906c",
+			"name": "User using a valid user ID.",
+			"url": "https://dummyjson.com/users/1",
+			"time": 128,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Requested user is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Requested user is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				128
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Requested user is returned": true
+				}
+			]
+		},
+		{
+			"id": "af1de59f-1882-4baa-8d05-cdaa6e439331",
+			"name": "User using an invalid user ID.",
+			"url": "https://dummyjson.com/users/9999",
+			"time": 91,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"User is not found": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User is not found": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				91
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"User is not found": true
+				}
+			]
+		},
+		{
+			"id": "65423de9-12bb-414b-9192-a0ccb94d336f",
+			"name": "Users using a valid search keyword.",
+			"url": "https://dummyjson.com/users/search?q=Emily",
+			"time": 159,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Matching users are returned": true,
+				"Returned users are related to the search keyword": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Matching users are returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Returned users are related to the search keyword": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				159
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Matching users are returned": true,
+					"Returned users are related to the search keyword": true
+				}
+			]
+		},
+		{
+			"id": "f0b31fdf-2366-4f82-bc76-40c35528aab5",
+			"name": "Users with no matching results.",
+			"url": "https://dummyjson.com/users/search?q=abcde1234",
+			"time": 103,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"No users are found for invalid search keyword": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"No users are found for invalid search keyword": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				103
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"No users are found for invalid search keyword": true
+				}
+			]
+		},
+		{
+			"id": "ea32ad62-d865-4500-8892-9ebc760aab35",
+			"name": "Users with a valid limit value.",
+			"url": "https://dummyjson.com/users?limit=5",
+			"time": 112,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response contains users array": true,
+				"Limit returns maximum 5 users": true,
+				"Limit is set to 5": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains users array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Limit returns maximum 5 users": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Limit is set to 5": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				112
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response contains users array": true,
+					"Limit returns maximum 5 users": true,
+					"Limit is set to 5": true
+				}
+			]
+		},
+		{
+			"id": "52139b55-3962-4295-86ec-cda719bf77df",
+			"name": "Users using pagination with skip.",
+			"url": "https://dummyjson.com/users?limit=5&skip=5",
+			"time": 110,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Pagination returns the correct number of users": true,
+				"Skip starts from the correct user": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pagination returns the correct number of users": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Skip starts from the correct user": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				110
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Pagination returns the correct number of users": true,
+					"Skip starts from the correct user": true
+				}
+			]
+		},
+		{
+			"id": "30b68efe-bbb7-4ec7-8c7d-a4fe87f900dc",
+			"name": "Users with selected fields only.",
+			"url": "https://dummyjson.com/users?select=firstName,lastName,username",
+			"time": 96,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Users are returned successfully": true,
+				"Only requested fields are returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Users are returned successfully": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Only requested fields are returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				96
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Users are returned successfully": true,
+					"Only requested fields are returned": true
+				}
+			]
+		},
+		{
+			"id": "b19b5fbf-d574-4b40-9b80-22b4f501796b",
+			"name": "Users in ascending order.",
+			"url": "https://dummyjson.com/users?sortBy=firstName&order=asc",
+			"time": 115,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Users are sorted by firstName in ascending order": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Users are sorted by firstName in ascending order": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				115
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Users are sorted by firstName in ascending order": true
+				}
+			]
+		},
+		{
+			"id": "6a787c92-2660-4874-b9d0-3099b6314f48",
+			"name": "Users in descending order.",
+			"url": "https://dummyjson.com/users?sortBy=firstName&order=desc",
+			"time": 125,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Users are sorted by firstName in descending order": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Users are sorted by firstName in descending order": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				125
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Users are sorted by firstName in descending order": true
+				}
+			]
+		},
+		{
+			"id": "86f7c9a5-e9d9-481c-bf57-d2949eb6c922",
+			"name": "Users by a valid field/ value.",
+			"url": "https://dummyjson.com/users/filter?key=gender&value=female",
+			"time": 110,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Users match the filter criteria": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Users match the filter criteria": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				110
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Users match the filter criteria": true
+				}
+			]
+		},
+		{
+			"id": "e686c217-31ce-4fd0-8548-684ad3df951c",
+			"name": "User with an invalid field/value.",
+			"url": "https://dummyjson.com/users/filter?key=invalidField&value=invalidValue",
+			"time": 109,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"No users are returned for invalid filter": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"No users are returned for invalid filter": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				109
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"No users are returned for invalid filter": true
+				}
+			]
+		},
+		{
+			"id": "f8273ec6-3e29-4828-950c-0008773e9dca",
+			"name": "Creating a user with valid data.",
+			"url": "https://dummyjson.com/users/add",
+			"time": 110,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"User is created successfully": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User is created successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				110
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"User is created successfully": true
+				}
+			]
+		},
+		{
+			"id": "afa8865f-9cab-4299-b19e-fbf3b93374ad",
+			"name": "Updating user information",
+			"url": "https://dummyjson.com/users/1",
+			"time": 112,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"User information is updated successfully": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User information is updated successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				112
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"User information is updated successfully": true
+				}
+			]
+		},
+		{
+			"id": "829a76dd-b60c-4ad8-8584-413c83ddd202",
+			"name": "Updating user information",
+			"url": "https://dummyjson.com/users/1",
+			"time": 101,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"User email is updated successfully": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User email is updated successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				101
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"User email is updated successfully": true
+				}
+			]
+		},
+		{
+			"id": "d2688c0d-dad9-4910-a20e-98c7913330d4",
+			"name": "Updating a user using an invalid user ID.",
+			"url": "https://dummyjson.com/users/9999",
+			"time": 97,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"User is not found": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User is not found": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				97
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"User is not found": true
+				}
+			]
+		},
+		{
+			"id": "331ddd0f-63dd-4310-9d56-0babea80ce65",
+			"name": "Deleting a user using a valid user ID.",
+			"url": "https://dummyjson.com/users/1",
+			"time": 104,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"User is marked as deleted": true,
+				"Deletion timestamp is returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User is marked as deleted": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Deletion timestamp is returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				104
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"User is marked as deleted": true,
+					"Deletion timestamp is returned": true
+				}
+			]
+		},
+		{
+			"id": "f7688fbc-ca30-4c98-a5d8-274b5f520f7b",
+			"name": "Deleting a user using an invalid user ID.",
+			"url": "https://dummyjson.com/users/9999",
+			"time": 90,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"User is not found": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User is not found": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				90
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"User is not found": true
+				}
+			]
+		},
+		{
+			"id": "61b0ed71-384d-43e9-9cdd-8b8fca098472",
+			"name": "All carts are retrieved successfully.",
+			"url": "https://dummyjson.com/carts",
+			"time": 111,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Carts are returned successfully": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Carts are returned successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				111
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Carts are returned successfully": true
+				}
+			]
+		},
+		{
+			"id": "96856ed3-2867-4700-a406-8c4f711d98e0",
+			"name": "Cart using a valid cart ID.",
+			"url": "https://dummyjson.com/carts/1",
+			"time": 101,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Requested cart is returned": true,
+				"Cart contains products": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Requested cart is returned": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Cart contains products": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				101
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Requested cart is returned": true,
+					"Cart contains products": true
+				}
+			]
+		},
+		{
+			"id": "689f3fce-d887-432d-b883-bae66a6b1a40",
+			"name": "Cart using an invalid cart ID.",
+			"url": "https://dummyjson.com/carts/9999",
+			"time": 98,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Cart is not found": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Cart is not found": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				98
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Cart is not found": true
+				}
+			]
+		},
+		{
+			"id": "d9d9aa5d-12cc-4e42-b5c6-c28ffdf96c70",
+			"name": "Carts associated with a valid user ID.",
+			"url": "https://dummyjson.com/carts/user/1",
+			"time": 95,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Carts are returned for the specified user": true,
+				"Returned carts belong to the specified user": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Carts are returned for the specified user": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Returned carts belong to the specified user": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				95
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Carts are returned for the specified user": true,
+					"Returned carts belong to the specified user": true
+				}
+			]
+		},
+		{
+			"id": "21a9c36c-4ace-450e-bf14-75801c21b161",
+			"name": "Carts using an invalid user ID.",
+			"url": "https://dummyjson.com/carts/user/9999",
+			"time": 97,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"User carts are not found": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User carts are not found": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				97
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"User carts are not found": true
+				}
+			]
+		},
+		{
+			"id": "4e8c865a-2241-4574-9864-d16d36ee38c7",
+			"name": "Carts with a valid limit value.",
+			"url": "https://dummyjson.com/carts?limit=5",
+			"time": 101,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Returned carts do not exceed the limit": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Returned carts do not exceed the limit": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				101
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Returned carts do not exceed the limit": true
+				}
+			]
+		},
+		{
+			"id": "84f74f79-4317-44ea-8b43-971c7772c3df",
+			"name": "Carts using pagination with skip.",
+			"url": "https://dummyjson.com/carts?limit=5&skip=5",
+			"time": 105,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Carts are returned successfully": true,
+				"Pagination returns maximum 5 carts": true,
+				"Limit is set to 5": true,
+				"Skip is set to 5": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Carts are returned successfully": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Pagination returns maximum 5 carts": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Limit is set to 5": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Skip is set to 5": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				105
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Carts are returned successfully": true,
+					"Pagination returns maximum 5 carts": true,
+					"Limit is set to 5": true,
+					"Skip is set to 5": true
+				}
+			]
+		},
+		{
+			"id": "d9e4ed8d-88b2-43fd-9d16-1b146156744c",
+			"name": "Carts with selected fields only.",
+			"url": "https://dummyjson.com/carts?select=id,userId,total",
+			"time": 113,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Selected cart fields are returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Selected cart fields are returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				113
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Selected cart fields are returned": true
+				}
+			]
+		},
+		{
+			"id": "7f65321c-d405-4e1a-973b-e7d010d206f6",
+			"name": "Carts in ascending order.",
+			"url": "https://dummyjson.com/carts?sortBy=total&order=asc",
+			"time": 145,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"carts are sorted by total ascending": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"carts are sorted by total ascending": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				145
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"carts are sorted by total ascending": true
+				}
+			]
+		},
+		{
+			"id": "89a3f918-d958-4422-b1b5-a4921cff4660",
+			"name": "Carts in descending order.",
+			"url": "https://dummyjson.com/carts?sortBy=total&order=desc",
+			"time": 115,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"carts are sorted by total descending": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"carts are sorted by total descending": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				115
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"carts are sorted by total descending": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 6882,
+	"collection": {
+		"requests": [
+			{
+				"id": "b2dc37bb-fc96-4b68-8e1f-93092b840918",
+				"method": "GET"
+			},
+			{
+				"id": "72f5d5b2-86fa-4aa9-bf57-6b70bd9a547a",
+				"method": "GET"
+			},
+			{
+				"id": "a2f65285-3fd9-499b-a224-0f1ed46b2f09",
+				"method": "GET"
+			},
+			{
+				"id": "e54a8dee-51be-48d3-85df-f234024ed8bd",
+				"method": "GET"
+			},
+			{
+				"id": "77d45adb-8621-4ead-8979-001b66779461",
+				"method": "GET"
+			},
+			{
+				"id": "f490af7a-c475-4a2f-bcf2-1ad8b52e129c",
+				"method": "GET"
+			},
+			{
+				"id": "c79377d1-7589-410c-858e-ae0849be1983",
+				"method": "GET"
+			},
+			{
+				"id": "bbe6dacf-555d-42ed-91d7-2153f5550b64",
+				"method": "GET"
+			},
+			{
+				"id": "e6a4d724-6325-47d5-a819-dc7f03ab2121",
+				"method": "GET"
+			},
+			{
+				"id": "01c04f1d-654d-44fa-837f-252a7fdf8671",
+				"method": "GET"
+			},
+			{
+				"id": "c2e00c20-5757-4b59-8723-d224adaf9426",
+				"method": "GET"
+			},
+			{
+				"id": "77d953aa-416a-4d19-8099-69d45ad8a5a7",
+				"method": "GET"
+			},
+			{
+				"id": "6d19674d-5edc-4e20-816b-472d1cee3190",
+				"method": "GET"
+			},
+			{
+				"id": "cd98629f-8165-4c11-9d32-b662ccca33e1",
+				"method": "GET"
+			},
+			{
+				"id": "4da005bd-7a19-4a1e-a254-a62b8d8c3734",
+				"method": "POST"
+			},
+			{
+				"id": "5b876a74-dc9d-4317-b39b-6f2dcfa0e77d",
+				"method": "POST"
+			},
+			{
+				"id": "716f92c7-bb79-4349-b17f-bbaad80c458e",
+				"method": "POST"
+			},
+			{
+				"id": "ca9cb9d9-cfb6-4e67-a875-df14712a40bc",
+				"method": "PUT"
+			},
+			{
+				"id": "fbce0a28-552a-4231-9e40-6ffc76229c28",
+				"method": "PATCH"
+			},
+			{
+				"id": "b71f2aa7-17ca-440b-8984-6dd7eaeb8e79",
+				"method": "PUT"
+			},
+			{
+				"id": "17f88b25-ae1b-41ad-af52-9b27083e5463",
+				"method": "DELETE"
+			},
+			{
+				"id": "3b836cd0-48ec-4170-842c-62290fc6a638",
+				"method": "DELETE"
+			},
+			{
+				"id": "60a081f9-de11-46c0-8b56-915b2743cbb7",
+				"method": "POST"
+			},
+			{
+				"id": "4b1ae3b5-aa62-4f63-9e6a-0a9826aedadd",
+				"method": "POST"
+			},
+			{
+				"id": "7e5b4687-5c51-4248-aa95-945418a4d127",
+				"method": "POST"
+			},
+			{
+				"id": "aae1154e-1bc6-4895-95cd-3cdaab9b70fa",
+				"method": "POST"
+			},
+			{
+				"id": "a512c2f7-da1c-4fc3-9070-6e258e015494",
+				"method": "POST"
+			},
+			{
+				"id": "cc006a17-22b1-42fd-a21d-fbd8ea1e5f46",
+				"method": "POST"
+			},
+			{
+				"id": "0effd521-8542-40c3-a72c-5641fcd84fab",
+				"method": "GET"
+			},
+			{
+				"id": "b910c2e4-97bf-4a25-9b05-0ab0af9956ca",
+				"method": "GET"
+			},
+			{
+				"id": "c8ae6bac-532e-4c23-b1c0-32772bac6019",
+				"method": "GET"
+			},
+			{
+				"id": "70152366-5117-4bab-9026-8bba4f75d634",
+				"method": "POST"
+			},
+			{
+				"id": "7dd916bc-5ce1-46b5-9e94-879826c22153",
+				"method": "POST"
+			},
+			{
+				"id": "e625d49e-349e-44f8-bbbf-7524d7c23b27",
+				"method": "GET"
+			},
+			{
+				"id": "207bc988-0d87-4ccc-90e5-33d8ea38682b",
+				"method": "GET"
+			},
+			{
+				"id": "c5fa3456-4478-43bf-931c-4fc98529906c",
+				"method": "GET"
+			},
+			{
+				"id": "af1de59f-1882-4baa-8d05-cdaa6e439331",
+				"method": "GET"
+			},
+			{
+				"id": "65423de9-12bb-414b-9192-a0ccb94d336f",
+				"method": "GET"
+			},
+			{
+				"id": "f0b31fdf-2366-4f82-bc76-40c35528aab5",
+				"method": "GET"
+			},
+			{
+				"id": "ea32ad62-d865-4500-8892-9ebc760aab35",
+				"method": "GET"
+			},
+			{
+				"id": "52139b55-3962-4295-86ec-cda719bf77df",
+				"method": "GET"
+			},
+			{
+				"id": "30b68efe-bbb7-4ec7-8c7d-a4fe87f900dc",
+				"method": "GET"
+			},
+			{
+				"id": "b19b5fbf-d574-4b40-9b80-22b4f501796b",
+				"method": "GET"
+			},
+			{
+				"id": "6a787c92-2660-4874-b9d0-3099b6314f48",
+				"method": "GET"
+			},
+			{
+				"id": "86f7c9a5-e9d9-481c-bf57-d2949eb6c922",
+				"method": "GET"
+			},
+			{
+				"id": "e686c217-31ce-4fd0-8548-684ad3df951c",
+				"method": "GET"
+			},
+			{
+				"id": "f8273ec6-3e29-4828-950c-0008773e9dca",
+				"method": "POST"
+			},
+			{
+				"id": "afa8865f-9cab-4299-b19e-fbf3b93374ad",
+				"method": "PUT"
+			},
+			{
+				"id": "829a76dd-b60c-4ad8-8584-413c83ddd202",
+				"method": "PATCH"
+			},
+			{
+				"id": "d2688c0d-dad9-4910-a20e-98c7913330d4",
+				"method": "PUT"
+			},
+			{
+				"id": "331ddd0f-63dd-4310-9d56-0babea80ce65",
+				"method": "DELETE"
+			},
+			{
+				"id": "f7688fbc-ca30-4c98-a5d8-274b5f520f7b",
+				"method": "DELETE"
+			},
+			{
+				"id": "61b0ed71-384d-43e9-9cdd-8b8fca098472",
+				"method": "GET"
+			},
+			{
+				"id": "96856ed3-2867-4700-a406-8c4f711d98e0",
+				"method": "GET"
+			},
+			{
+				"id": "689f3fce-d887-432d-b883-bae66a6b1a40",
+				"method": "GET"
+			},
+			{
+				"id": "d9d9aa5d-12cc-4e42-b5c6-c28ffdf96c70",
+				"method": "GET"
+			},
+			{
+				"id": "21a9c36c-4ace-450e-bf14-75801c21b161",
+				"method": "GET"
+			},
+			{
+				"id": "4e8c865a-2241-4574-9864-d16d36ee38c7",
+				"method": "GET"
+			},
+			{
+				"id": "84f74f79-4317-44ea-8b43-971c7772c3df",
+				"method": "GET"
+			},
+			{
+				"id": "d9e4ed8d-88b2-43fd-9d16-1b146156744c",
+				"method": "GET"
+			},
+			{
+				"id": "7f65321c-d405-4e1a-973b-e7d010d206f6",
+				"method": "GET"
+			},
+			{
+				"id": "89a3f918-d958-4422-b1b5-a4921cff4660",
+				"method": "GET"
+			}
+		]
+	}
+}
