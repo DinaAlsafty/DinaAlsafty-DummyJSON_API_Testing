@@ -1,0 +1,77 @@
+
+
+Products
+
+-Validate that all products are retrieved successfully.
+-Validate that the response contains the required product fields.
+-Validate retrieving a product using a valid product ID. 
+-Validate retrieving a product using a invalid product ID.
+-Validate searching for products using a valid search keyword.
+-Validate searching for products with no matching results.
+-Validate retrieving products using a valid category.
+-Validate retrieving products using an invalid category.
+-Validate retrieving all available product categories.
+-Validate retrieving products with a valid limit value.
+-Validate retrieving products using pagination with skip.
+-Validate retrieving products with selected fields only.
+-Validate sorting products in ascending order.
+-Validate sorting products in descending order.
+-Validate creating a product with valid data.
+-Validate creating a product without a title.
+-Validate creating a product without a price.
+-Validate updating product information using PUT.
+-Validate partially updating product information using PATCH.
+-Validate updating a product using an invalid product ID.
+-Validate deleting a product using a valid product ID.
+-Validate deleting a product using an invalid product ID.
+
+ 
+Authentication API
+
+-Validate that the user can login using valid credentials.
+-Validate that the login response returns a valid access token.
+-Validate that the login response returns the authenticated user’s information.
+-Validate login with invalid credentials.
+-Validate retrieving the authenticated user using a valid access token.
+-Validate retrieving the authenticated user without an access token.
+-Validate retrieving the authenticated user using an invalid access token.
+-Validate refreshing the access token using a valid refresh token.
+-Validate refreshing the access token using an invalid refresh token.
+
+
+Users API
+
+-Validate that all users are retrieved successfully.
+-Validate that the response contains the required user fields.
+-Validate retrieving a user using a valid user ID.
+-Validate retrieving a user using an invalid user ID.
+-Validate searching for users using a valid search keyword.
+-Validate searching for users with no matching results.
+-Validate retrieving users with a valid limit value.
+-Validate retrieving users using pagination with skip.
+-Validate retrieving users with selected fields only.
+-Validate sorting users in ascending order.
+-Validate sorting users in descending order.
+-Validate filtering users by a valid field/value.
+-Validate filtering users using an invalid field/value.
+-Validate creating a user with valid data.
+-Validate updating user information using PUT.
+-Validate partially updating user information using PATCH.
+-Validate updating a user using an invalid user ID.
+-Validate deleting a user using a valid user ID.
+-Validate deleting a user using an invalid user ID.
+
+
+Carts API
+
+-Validate that all carts are retrieved successfully.
+-Validate that the response contains the required cart fields.
+-Validate retrieving a cart using a valid cart ID.
+-Validate retrieving a cart using an invalid cart ID.
+-Validate retrieving carts associated with a valid user ID.
+-Validate retrieving carts using an invalid user ID.
+-Validate retrieving carts with a valid limit value.
+-Validate retrieving carts using pagination with skip.
+-Validate retrieving carts with selected fields only.
+-Validate sorting carts in ascending order.
+-Validate sorting carts in descending order.
