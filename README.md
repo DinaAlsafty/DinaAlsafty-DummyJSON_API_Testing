@@ -185,7 +185,20 @@ API-Testing-Project/
 │   └── DummyJSON API Testing.postman_collection.json
 │
 ├── Test Documentation/
-│   ├── Test Scenarios.xlsx
+│   ├── API-Testing-Project/
+│
+├── Postman/
+│   └── DummyJSON API Testing.postman_collection.json
+│
+├── Test Documentation/
+│   ├── Test_Scenarios.xlsx
+│   ├── Testcases.xlsx
+│   ├── TestCases_execution.xlsx
+│   └── Execution & Summary Report.xlsx
+│
+├── Evidence/
+│
+└── README.md
 │   ├── Test Cases.xlsx
 │   ├── Test Execution Report.xlsx
 │   └── Test Summary Report.xlsx
